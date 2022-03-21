@@ -30,12 +30,7 @@ $router->post('/crear-cuenta', [LoginController::class, 'crear']);
 $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
     /**Confirmar cuenta */
-if (isset($_GET["token"])) {
-    $token = $_GET["token"];
-    $router->get('/confirmar-cuenta=$token', [LoginController::class, 'confirmar']);
-}else{
-    $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
-}
+$router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
 
     /**Area Privada */
 $router->get('/cita',[CitaController::class, 'index']);
@@ -52,14 +47,8 @@ $router->get('/servicios', [ServicioController::class, 'index']);
 $router->get('/servicios/crear', [ServicioController::class, 'crear']);
 $router->post('/servicios/crear', [ServicioController::class, 'crear']);
 
-if (isset($_GET["token"])) {
-    $token = $_GET["token"];
-    $router->get("/reestablecer?token=$token", [LoginController::class, "reestablecer"]);
-    $router->post("/reestablecer?token=$token", [LoginController::class, "reestablecer"]);
-}else{
-    $router->get("/reestablecer", [LoginController::class, "reestablecer"]);
-    $router->post("/reestablecer", [LoginController::class, "reestablecer"]);
-}
+$router->get('/servicios/actualizar', [ServicioController::class, 'actualizar']);
+$router->post('/servicios/actualizar', [ServicioController::class, 'actualizar']);
 
 $router->post('/servicios/eliminar', [ServicioController::class, 'eliminar']);
 
