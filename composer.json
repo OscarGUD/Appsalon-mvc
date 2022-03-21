@@ -1,0 +1,22 @@
+{
+    "name": "famil/app-salon_php_mvc_js_sass",
+    "description": "PROYECTO PHP 8,SQL,GULP,SASS",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oscar Gabriel Uribe Duran"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
