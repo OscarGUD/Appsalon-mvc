@@ -38,7 +38,7 @@ class Email{
         $mail->Charser = 'UTF-8';
         $contenido = '<html>';
         $contenido .= '<p><strong>Hola ' . $this->nombre . '</strong> Has creado tu cuenta en App salon, solo debes confirmarla presionando el siguiente enlace</p>';
-        $contenido .= '<p>Preciona Aqui: <a href="https://lit-retreat-56820.herokuapp.com/confirmar-cuenta?token=' . $this->token . '">Reestablecer Tu Password</a></p>';
+        $contenido .= '<p>Preciona Aqui: <a href="https://lit-retreat-56820.herokuapp.com/confirmar-cuenta?token=' . $this->token . '">Confirmar Cuenta</a></p>';
         $contenido .= '<p>Si tu no solicitaste esta cuenta puedes ignorar el mensaje</p>';
         $contenido .= '</html>';
 
