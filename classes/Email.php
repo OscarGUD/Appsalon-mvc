@@ -31,8 +31,8 @@ class Email{
         $mail->Username = $_ENV['MAIL_USER'];
         $mail->Password = $_ENV['MAIL_PASS'];
 
-        $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com', 'Appsalon.com');
+        $mail->setFrom('correodepruebasphpmailer@gmail.com');
+        $mail->addAddress('correodepruebasphpmailer@gmail.com');
         $mail->Subject = 'Confirma tu cuenta';
 
         $mail->isHTML(true);
