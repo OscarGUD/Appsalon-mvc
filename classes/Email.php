@@ -32,7 +32,7 @@ class Email{
         $mail->Password = $_ENV['MAIL_PASS'];
 
         $mail->setFrom('correodepruebasphpmailer@gmail.com');
-        $mail->addAddress('correodepruebasphpmailer@gmail.com');
+        $mail->addAddress('akilesnoob@gmail.com');
         $mail->Subject = 'Confirma tu cuenta';
 
         $mail->isHTML(true);
