@@ -32,7 +32,7 @@ class Email{
         $mail->Password = $_ENV['MAIL_PASS'];
 
         $mail->setFrom('correodepruebasphpmailer@gmail.com');
-        $mail->addAddress('akilesnoob@gmail.com');
+        $mail->addAddress($this->email);
         $mail->Subject = 'Confirma tu cuenta';
 
         $mail->isHTML(true);
@@ -59,8 +59,8 @@ class Email{
         $mail->Username = $_ENV['MAIL_USER'];
         $mail->Password = $_ENV['MAIL_PASS'];
 
-        $mail->setFrom('cuentas@appsalon.com');
-        $mail->addAddress('cuentas@appsalon.com', 'Appsalon.com');
+        $mail->setFrom('cuentadepruebasphpmailer@gmail.com');
+        $mail->addAddress($this->email);
         $mail->Subject = 'Reestablece tu password';
 
         $mail->isHTML(true);
